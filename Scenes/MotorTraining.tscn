@@ -1,3 +1,42 @@
 [gd_scene format=3 uid="uid://b3n3u3akdvyc8"]
 
+[ext_resource type="Script" uid="uid://coqs3ab27vrj7" path="res://Scripts/motor_skills.gd" id="1_jibvq"]
+
 [node name="MotorTraining" type="Node2D" unique_id=909498100]
+script = ExtResource("1_jibvq")
+
+[node name="Button1" type="Button" parent="." unique_id=926703039]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button2" type="Button" parent="." unique_id=1368337221]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button3" type="Button" parent="." unique_id=714178957]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button4" type="Button" parent="." unique_id=2049980009]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button5" type="Button" parent="." unique_id=1954482212]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button6" type="Button" parent="." unique_id=1964515022]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button7" type="Button" parent="." unique_id=638446278]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button8" type="Button" parent="." unique_id=607964669]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button9" type="Button" parent="." unique_id=152396422]
+offset_right = 8.0
+offset_bottom = 8.0
