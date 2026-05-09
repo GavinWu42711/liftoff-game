@@ -5,8 +5,15 @@ class_name Letter
 #Area 2D that recognizes how much of the points landed in the letter
 @export var letterSections:Array[Area2D] = []
 
+#What letter it is
+@export var letter:String = ""
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	
+	print(letter)
+	CommunicationTrainingGlobals.clear_letter.connect(clear_letter)
+	
 	#Make sure all letter sections have the right mask
 	if (letterSections):
 		for letterSection:Area2D in letterSections:
@@ -35,5 +42,9 @@ func check_sections() -> void:
 		#Decision based on if letter is completed
 		if (letter_completed):
 			CommunicationTrainingGlobals.letter_finished.emit()
+
+#Clears out the letter once the level is done
+func clear_letter() -> void:
+	self.queue_free()
 				
 		

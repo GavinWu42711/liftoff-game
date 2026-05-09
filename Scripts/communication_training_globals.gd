@@ -3,6 +3,7 @@ extends Node
 signal letter_finished
 signal add_letter_out
 signal clear_points
+signal clear_letter
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

@@ -1,14 +1,13 @@
-[gd_scene format=3 uid="uid://cakf5ekcg15wr"]
+[gd_scene format=3 uid="uid://b7rk81ii6k7ba"]
 
-[ext_resource type="Script" uid="uid://caaa37lf7bgee" path="res://Scripts/LettersClass.gd" id="1_cn8er"]
-[ext_resource type="Texture2D" uid="uid://b2u0mi0cotpt8" path="res://Art/Letter Art/A.webp" id="2_btw1i"]
+[ext_resource type="Script" uid="uid://caaa37lf7bgee" path="res://Scripts/LettersClass.gd" id="1_u5wsr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cn8er"]
 
-[node name="LetterA" type="Node2D" unique_id=2097060901 node_paths=PackedStringArray("letterSections")]
-script = ExtResource("1_cn8er")
-letterSections = [NodePath("Area2D"), NodePath("Area2D2"), NodePath("Area2D3")]
-letter = "A"
+[node name="Letter" type="Node2D" unique_id=2097060901 node_paths=PackedStringArray("letterSections")]
+script = ExtResource("1_u5wsr")
+letterSections = [NodePath(""), NodePath(""), NodePath("")]
+letter = "T"
 
 [node name="Area2D" type="Area2D" parent="." unique_id=540665168]
 
@@ -27,7 +26,3 @@ position = Vector2(0, -40)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" unique_id=692440090]
 position = Vector2(0, 20)
 shape = SubResource("RectangleShape2D_cn8er")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=657687763]
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_btw1i")

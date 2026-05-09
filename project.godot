@@ -18,6 +18,11 @@ config/icon="res://icon.svg"
 
 CommunicationTrainingGlobals="*uid://cusxgsdnlsxy2"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=960
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
