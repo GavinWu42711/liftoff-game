@@ -14,6 +14,12 @@ func _ready() -> void:
 	print(letter)
 	CommunicationTrainingGlobals.clear_letter.connect(clear_letter)
 	
+	for collision:CollisionPolygon2D in get_node("collisions").get_children():
+		var tempArea2D:Area2D = Area2D.new()
+		tempArea2D.global_position = Vector2(0,0)
+		add_child(tempArea2D)
+		collision.reparent(tempArea2D)
+		
 	for child in get_children():
 		if child is Area2D:
 			letterSections.append(child)

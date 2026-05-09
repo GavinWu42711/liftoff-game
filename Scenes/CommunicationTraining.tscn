@@ -6,18 +6,3 @@
 script = ExtResource("1_8ajax")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1819949467]
-
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=843623238]
-layer = -1
-visible = false
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2946731]
-anchors_preset = -1
-anchor_left = 0.001
-anchor_right = 0.001
-offset_left = -43.152
-offset_top = -13.0
-offset_right = 1169.848
-offset_bottom = 678.0
-color = Color(0, 0, 0, 1)
-metadata/_edit_use_anchors_ = true
