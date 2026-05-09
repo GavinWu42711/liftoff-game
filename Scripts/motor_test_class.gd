@@ -1,17 +1,9 @@
-extends Node2D
-class_name ButtonClass
-
-static var button_count:int = 0
-var button_num:int
+extends game
 # Called when the node enters the scene tree for the first time.
+var training = game.new()
+
 func _ready() -> void:
-	button_count+=1
-	button_num = button_count
-	pass
-	
+	training.run()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
-
-func _on_pressed() -> void:
-	pass # Replace with function body.
