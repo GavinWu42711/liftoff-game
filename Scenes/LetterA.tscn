@@ -3,9 +3,8 @@
 [ext_resource type="Script" uid="uid://caaa37lf7bgee" path="res://Scripts/LettersClass.gd" id="1_cn8er"]
 [ext_resource type="Texture2D" uid="uid://b2u0mi0cotpt8" path="res://Art/Letter Art/A.webp" id="2_btw1i"]
 
-[node name="LetterA" type="Node2D" unique_id=2097060901 node_paths=PackedStringArray("letterSections")]
+[node name="LetterA" type="Node2D" unique_id=2097060901]
 script = ExtResource("1_cn8er")
-letterSections = [NodePath("Area2D2"), NodePath("Area2D3"), NodePath("Area2D5"), NodePath("Area2D6"), NodePath("Area2D7"), NodePath("Area2D8"), NodePath("Area2D9"), NodePath("Area2D10"), NodePath("Area2D11"), NodePath("Area2D12"), NodePath("Area2D13"), NodePath("Area2D14"), NodePath("Area2D15"), NodePath("Area2D16"), NodePath("Area2D17"), NodePath("Area2D18"), NodePath("Area2D19"), NodePath("Area2D20"), NodePath("Area2D21"), NodePath("Area2D22"), NodePath("Area2D23"), NodePath("Area2D24"), NodePath("Area2D25"), NodePath("Area2D26"), NodePath("Area2D27"), NodePath("Area2D28"), NodePath("Area2D29"), NodePath("Area2D30"), NodePath("Area2D31"), NodePath("Area2D32"), NodePath("Area2D33"), NodePath("Area2D34"), NodePath("Area2D35"), NodePath("Area2D4")]
 letter = "A"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=657687763]

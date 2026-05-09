@@ -3,7 +3,7 @@ extends Node2D
 class_name Letter
 
 #Area 2D that recognizes how much of the points landed in the letter
-@export var letterSections:Array[Area2D] = []
+var letterSections:Array[Area2D] = []
 
 #What letter it is
 @export var letter:String = ""
@@ -13,6 +13,10 @@ func _ready() -> void:
 	
 	print(letter)
 	CommunicationTrainingGlobals.clear_letter.connect(clear_letter)
+	
+	for child in get_children():
+		if child is Area2D:
+			letterSections.append(child)
 	
 	#Make sure all letter sections have the right mask
 	if (letterSections):
