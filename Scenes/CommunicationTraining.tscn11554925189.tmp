@@ -1,12 +1,8 @@
 [gd_scene format=3 uid="uid://c2drx7r4ex71u"]
 
 [ext_resource type="Script" uid="uid://vr17e8a40wvi" path="res://Scripts/communication_training.gd" id="1_8ajax"]
-[ext_resource type="PackedScene" uid="uid://cakf5ekcg15wr" path="res://Scenes/LetterA.tscn" id="2_hx7ga"]
 
 [node name="CommunicationTraining" type="Node2D" unique_id=114571813]
 script = ExtResource("1_8ajax")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1819949467]
-
-[node name="LetterA" parent="." unique_id=2097060901 instance=ExtResource("2_hx7ga")]
-scale = Vector2(10, 10)
