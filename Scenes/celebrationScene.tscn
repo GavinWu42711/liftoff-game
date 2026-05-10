@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://co8lxlfe0qkmg"]
+
+[ext_resource type="Script" uid="uid://vdq3rcv3qljw" path="res://Scripts/celebration_scene.gd" id="1_uh2j1"]
+[ext_resource type="PackedScene" uid="uid://2olyc2tj1wp" path="res://Scenes/ConfettiPopper.tscn" id="1_xsjgk"]
+
+[node name="CelebrationScene" type="Node2D" unique_id=663618702]
+script = ExtResource("1_uh2j1")
+
+[node name="ConfettiPopper" parent="." unique_id=1687951292 instance=ExtResource("1_xsjgk")]
+z_index = 1
+position = Vector2(592.00006, 448)
+rotation = -2.3561945
+
+[node name="ConfettiPopper2" parent="." unique_id=751547264 instance=ExtResource("1_xsjgk")]
+z_index = 1
+position = Vector2(592, -412)
+rotation = 2.3561945
+
+[node name="ConfettiPopper3" parent="." unique_id=139457122 instance=ExtResource("1_xsjgk")]
+z_index = 1
+position = Vector2(-589, 414)
+rotation = -0.7853982
+
+[node name="ConfettiPopper4" parent="." unique_id=1600941894 instance=ExtResource("1_xsjgk")]
+z_index = 1
+position = Vector2(-559, -407.00003)
+rotation = 0.7853982
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1782919462]

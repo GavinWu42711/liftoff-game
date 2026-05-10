@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccvnu4dj1p4o7"
-path="res://.godot/imported/H.webp-000ab83d81ea13e799b45caaa0072a63.ctex"
+uid="uid://bbyvtn6kxvyft"
+path="res://.godot/imported/X.webp-cb2021a3c5d6f738c749f996d523c857.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Confetti Art/Letter Art v2/H.webp"
-dest_files=["res://.godot/imported/H.webp-000ab83d81ea13e799b45caaa0072a63.ctex"]
+source_file="res://Art/Letter Art v2/X.webp"
+dest_files=["res://.godot/imported/X.webp-cb2021a3c5d6f738c749f996d523c857.ctex"]
 
 [params]
 
