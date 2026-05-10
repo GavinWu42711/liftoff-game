@@ -18,6 +18,7 @@ script = ExtResource("1_tjuiy")
 metadata/_edit_horizontal_guides_ = [217.0]
 
 [node name="Button1" type="Button" parent="." unique_id=926703039]
+visible = false
 z_index = 1
 offset_left = 191.0
 offset_top = -244.99994
@@ -45,6 +46,7 @@ texture = ExtResource("3_d8lio")
 metadata/_edit_lock_ = true
 
 [node name="Button2" type="Button" parent="." unique_id=1368337221]
+visible = false
 offset_left = -525.99976
 offset_top = 26.0
 offset_right = -374.99976
@@ -72,6 +74,7 @@ text = "2
 metadata/_edit_lock_ = true
 
 [node name="Button3" type="Button" parent="." unique_id=714178957]
+visible = false
 offset_left = 411.0
 offset_top = 208.13708
 offset_right = 583.0
@@ -96,6 +99,7 @@ text = "3"
 metadata/_edit_lock_ = true
 
 [node name="Button4" type="Button" parent="." unique_id=2049980009]
+visible = false
 z_index = 1
 z_as_relative = false
 offset_left = -77.0
@@ -125,6 +129,7 @@ text = "4"
 metadata/_edit_lock_ = true
 
 [node name="Button5" type="Button" parent="." unique_id=1954482212]
+visible = false
 offset_left = -411.0
 offset_top = -303.0
 offset_right = -199.0
@@ -151,6 +156,7 @@ text = "5
 metadata/_edit_lock_ = true
 
 [node name="Button6" type="Button" parent="." unique_id=1964515022]
+visible = false
 offset_left = 444.00003
 offset_top = -238.99998
 offset_right = 825.0
@@ -176,6 +182,7 @@ text = "6
 metadata/_edit_lock_ = true
 
 [node name="Button7" type="Button" parent="." unique_id=638446278]
+visible = false
 offset_left = 153.0
 offset_top = 221.99994
 offset_right = 382.0
@@ -201,6 +208,7 @@ text = "7"
 metadata/_edit_lock_ = true
 
 [node name="Button8" type="Button" parent="." unique_id=607964669]
+visible = false
 offset_left = -231.00002
 offset_top = 331.0
 offset_right = 73.999985
@@ -226,6 +234,7 @@ text = "8"
 metadata/_edit_lock_ = true
 
 [node name="Button9" type="Button" parent="." unique_id=152396422]
+visible = false
 offset_left = -136.0
 offset_top = -253.99994
 offset_right = 81.0
