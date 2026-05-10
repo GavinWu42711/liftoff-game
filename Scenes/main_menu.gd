@@ -8,7 +8,7 @@ extends Node2D
 func _ready() -> void:
 	communicationButton.pressed.connect(changeToComScene)
 	motorButton.pressed.connect(changeToMotorScene)
-
+	socialButton.pressed.connect(changeToSocialScene)
 
 # Cal	led every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -19,3 +19,6 @@ func changeToComScene() -> void:
 	
 func changeToMotorScene() -> void:
 	get_tree().change_scene_to_file("res://Scenes/MotorTraining.tscn")
+
+func changeToSocialScene() -> void:
+	get_tree().change_scene_to_file("res://Scenes/SocialScene.tscn")
