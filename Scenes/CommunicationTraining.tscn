@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dsn3io36rd3vx" path="res://Art/Letter Art v2/background.webp" id="3_sasl0"]
 [ext_resource type="Script" path="res://Scripts/blankBackground.gd" id="4_7eio5"]
 [ext_resource type="AudioStream" uid="uid://c4s0vsfp8pevt" path="res://Art/music/If I Am With You.mp3" id="5_2oerx"]
+[ext_resource type="Script" uid="uid://c83hrt1g43f1m" path="res://Scenes/gojoMusic.gd" id="6_mdn4g"]
 
 [sub_resource type="Animation" id="Animation_7eio5"]
 length = 0.001
@@ -66,3 +67,4 @@ libraries/ = SubResource("AnimationLibrary_kr71l")
 stream = ExtResource("5_2oerx")
 volume_db = -10.0
 autoplay = true
+script = ExtResource("6_mdn4g")

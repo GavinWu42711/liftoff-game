@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cq6m2q3x1yn8q"]
 
 [ext_resource type="AudioStream" uid="uid://c4s0vsfp8pevt" path="res://Art/music/If I Am With You.mp3" id="1_mvqff"]
+[ext_resource type="Script" uid="uid://c83hrt1g43f1m" path="res://Scenes/gojoMusic.gd" id="2_bkdj7"]
 
 [node name="SocialScene" type="Node2D" unique_id=861917737]
 
@@ -8,3 +9,4 @@
 stream = ExtResource("1_mvqff")
 volume_db = -10.0
 autoplay = true
+script = ExtResource("2_bkdj7")
