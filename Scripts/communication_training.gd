@@ -171,6 +171,8 @@ func next_letter() -> void:
 		#Let the user start drawing again
 		isDrawing = true
 		
+		await get_tree().create_timer(0.5).timeout
+		
 		#Switch scene
 		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
 		
