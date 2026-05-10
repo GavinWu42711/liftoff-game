@@ -41,7 +41,7 @@ preload("res://Scenes/LetterZ.tscn")
 ]
 	
 #Enum to convert alphabet letter to index
-enum alphabetEnum {A,B,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}
+enum alphabetEnum {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}
 	
 var current_letter:Letter
 var current_letter_index:int
@@ -175,7 +175,7 @@ func next_letter() -> void:
 		#Let the user start drawing again
 		isDrawing = true
 		
-		await get_tree().create_timer(0.5).timeout
+		await get_tree().create_timer(2).timeout
 		
 		#Switch scene
 		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
