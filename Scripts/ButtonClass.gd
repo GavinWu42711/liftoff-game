@@ -3,6 +3,7 @@ class_name ButtonClass
 static var button_list:Array[Button]
 static var button_count:int = 0
 var button_num:int
+@onready var audio_stream_player_2d_3: AudioStreamPlayer2D = $"../AudioStreamPlayer2D3"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -23,4 +24,10 @@ func _pressed() -> void:
 		if Global.stage == Global.clicked:
 			Global.stage_complete = true
 	else: 
-		print("youre a chud")
+		button_count = 0
+		Global.clicked = 0
+		Global.stage = 1
+		Global.stage_complete = false
+		audio_stream_player_2d_3.play()
+		await get_tree().create_timer(2.5).timeout
+		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")

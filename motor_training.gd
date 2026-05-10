@@ -1,6 +1,11 @@
 extends Node2D
 class_name game
-signal move
+
+var sounds: AudioStreamMP3
+@onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
+@onready var audio_stream_player_2d_3: AudioStreamPlayer2D = $AudioStreamPlayer2D3
+@onready var audio_stream_player_2d_2: AudioStreamPlayer2D = $AudioStreamPlayer2D2
+
 @onready var button_1: Button = $Button1
 @onready var button_2: Button = $Button2
 @onready var button_3: Button = $Button3
@@ -55,6 +60,13 @@ func _process(delta: float) -> void:
 		isFinished = true
 		#enter next scene here
 		celebrationScene.activate()
+		
+		Global.clicked = 0
+		Global.stage = 1
+		Global.stage_complete = false
+		ButtonClass.button_count = 0
+		
+		audio_stream_player_2d.play()
 		
 		await get_tree().create_timer(4).timeout
 		

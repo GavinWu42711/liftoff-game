@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://o64yx3fqf0gj"]
+
+[ext_resource type="Texture2D" uid="uid://bt0c5a4tdf7j7" path="res://Art/defaultbg.png" id="1_lkce3"]
+
+[node name="Emotional" type="Node2D" unique_id=69046109]
+
+[node name="happybutton" type="Button" parent="." unique_id=1062904182]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="sadbutton" type="Button" parent="." unique_id=137535398]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1813880209]
+position = Vector2(1109, 832)
+texture = ExtResource("1_lkce3")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=296844386]
+position = Vector2(639, 480)
