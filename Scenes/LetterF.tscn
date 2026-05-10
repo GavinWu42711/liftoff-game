@@ -145,11 +145,7 @@ polygon = PackedVector2Array(-40.503513, -9.860409, -42.613743, 14.196339, 41.68
 position = Vector2(-87.94868, -206.61462)
 polygon = PackedVector2Array(-36.416355, 9.775983, -36.05132, 5.6145906, -18.05132, -12.385379, 45.001568, -14.169894, 45.51743, 11.1647005)
 
-[node name="@CollisionPolygon2D@360138" type="CollisionPolygon2D" parent="collisions" unique_id=828979623]
-position = Vector2(-40.56321, -38.63336)
-polygon = PackedVector2Array(-2.6579437, -0.3849945, 1.3163834, -0.42596436, 1.341568, 0.81095886)
-
-[node name="@CollisionPolygon2D@360129" type="CollisionPolygon2D" parent="collisions" unique_id=550395241]
+[node name="_CollisionPolygon2D_360129" type="CollisionPolygon2D" parent="collisions" unique_id=550395241]
 position = Vector2(-94.57462, 209.20436)
 polygon = PackedVector2Array(41.272476, -9.758347, 33.574623, 11.795639, 7.5746245, 19.795639, -14.425375, 14.795639, -33.425377, -12.204361, -34.570976, -24.42421)
 
