@@ -28,6 +28,7 @@ func _pressed() -> void:
 		Global.clicked = 0
 		Global.stage = 1
 		Global.stage_complete = false
-		audio_stream_player_2d_3.play()
-		await get_tree().create_timer(2.5).timeout
+		if not audio_stream_player_2d_3.playing :
+			audio_stream_player_2d_3.play()
+		await get_tree().create_timer(3.5).timeout
 		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
