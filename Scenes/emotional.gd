@@ -1,5 +1,6 @@
 extends Node2D
-
+var sprite_list:Array[Sprite2D]
+var binary_list:Array[int]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

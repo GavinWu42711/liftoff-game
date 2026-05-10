@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsoi4tfuji5db"
+path="res://.godot/imported/March Rd 3.mp3-27f529d07850bd309220baa46df5b25e.mp3str"
+
+[deps]
+
+source_file="res://Art/audio/March Rd 3.mp3"
+dest_files=["res://.godot/imported/March Rd 3.mp3-27f529d07850bd309220baa46df5b25e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

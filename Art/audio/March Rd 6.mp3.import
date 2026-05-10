@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drbsapqlisapt"
+path="res://.godot/imported/March Rd 6.mp3-6032ce06d65a133cbcc9f79e7e01f54e.mp3str"
+
+[deps]
+
+source_file="res://Art/audio/March Rd 6.mp3"
+dest_files=["res://.godot/imported/March Rd 6.mp3-6032ce06d65a133cbcc9f79e7e01f54e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
