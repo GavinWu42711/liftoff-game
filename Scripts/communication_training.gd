@@ -58,12 +58,10 @@ func _ready() -> void:
 	CommunicationTrainingGlobals.letter_finished.connect(next_letter)
 	CommunicationTrainingGlobals.add_letter_out.connect(increment_out_of_bound)
 	
+	
 	current_letter = letterScenes[alphabetEnum.A].instantiate()
 	current_letter_index = alphabetEnum.A
 	add_child(current_letter)
-	
-	#Set a slight delay when it first loads
-	await get_tree().create_timer(0.5).timeout
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
