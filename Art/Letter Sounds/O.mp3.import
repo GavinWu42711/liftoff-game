@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ffimww7vb3kv"
+path="res://.godot/imported/O.mp3-ed6579f293f7ed473d46d560fb3929fe.mp3str"
+
+[deps]
+
+source_file="res://Art/Letter Sounds/O.mp3"
+dest_files=["res://.godot/imported/O.mp3-ed6579f293f7ed473d46d560fb3929fe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

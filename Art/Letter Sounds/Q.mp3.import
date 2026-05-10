@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://t5k3s5kk34oh"
+path="res://.godot/imported/Q.mp3-38c527bb7c3b731639557ada164fe50d.mp3str"
+
+[deps]
+
+source_file="res://Art/Letter Sounds/Q.mp3"
+dest_files=["res://.godot/imported/Q.mp3-38c527bb7c3b731639557ada164fe50d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

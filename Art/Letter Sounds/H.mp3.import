@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dw0g4yky7j08k"
+path="res://.godot/imported/H.mp3-e537c2120b049ac40a1562c4d162eb6b.mp3str"
+
+[deps]
+
+source_file="res://Art/Letter Sounds/H.mp3"
+dest_files=["res://.godot/imported/H.mp3-e537c2120b049ac40a1562c4d162eb6b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

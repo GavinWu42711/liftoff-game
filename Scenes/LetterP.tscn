@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://caaa37lf7bgee" path="res://Scripts/LettersClass.gd" id="1_4f1cq"]
 [ext_resource type="Texture2D" uid="uid://dlwa1btjwp4ba" path="res://Art/Letter Art v2/P.webp" id="2_g8y6x"]
+[ext_resource type="AudioStream" uid="uid://eaqtecsxuoxi" path="res://Art/Letter Sounds/P.mp3" id="3_raafg"]
+[ext_resource type="Script" uid="uid://mipoq7yawvfb" path="res://Scripts/letterSound.gd" id="4_hol63"]
 
 [node name="Letter" type="Node2D" unique_id=2097060901]
 script = ExtResource("1_4f1cq")
@@ -156,3 +158,7 @@ polygon = PackedVector2Array(-41.062325, 11.771588, -38.475014, -1.7399473, 2.52
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1453442960]
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_g8y6x")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=173855916]
+stream = ExtResource("3_raafg")
+script = ExtResource("4_hol63")
