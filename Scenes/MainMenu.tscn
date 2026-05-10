@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bbenq2j8aljgl" path="res://Scenes/main_menu.gd" id="1_853f1"]
 [ext_resource type="Texture2D" uid="uid://d2y72qntkp7o7" path="res://Art/Main Menu v2.webp" id="2_853f1"]
 [ext_resource type="AudioStream" uid="uid://c4s0vsfp8pevt" path="res://Art/music/If I Am With You.mp3" id="3_8saeu"]
-[ext_resource type="Script" uid="uid://c83hrt1g43f1m" path="res://Scenes/gojoMusic.gd" id="4_ghw46"]
+[ext_resource type="Script" path="res://Scenes/gojoMusic.gd" id="4_ghw46"]
 
 [node name="MainMenu" type="Node2D" unique_id=2085189965]
 script = ExtResource("1_853f1")

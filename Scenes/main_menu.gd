@@ -21,4 +21,4 @@ func changeToMotorScene() -> void:
 	get_tree().change_scene_to_file("res://Scenes/MotorTraining.tscn")
 
 func changeToSocialScene() -> void:
-	get_tree().change_scene_to_file("res://Scenes/SocialScene.tscn")
+	get_tree().change_scene_to_file("res://Scenes/emotional.tscn")
