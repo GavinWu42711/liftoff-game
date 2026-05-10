@@ -9,6 +9,8 @@ const RESTART_AMOUNT = 5
 #Scene for the points that are drawn onto the screen
 var pointScene = preload("res://Scenes/Point.tscn")
 
+@onready var wrongAnswerSound:AudioStreamPlayer2D = $AudioStreamPlayer2D2
+
 #Array containing all letter scenes
 var letterScenes = [preload("res://Scenes/LetterA.tscn"),
 preload("res://Scenes/LetterB.tscn"),
@@ -105,12 +107,14 @@ func restart() -> void:
 	#Reset out of bounds counter
 	pointsOutOfBounds = 0
 		
+	#wrong answer sound
+	wrongAnswerSound.play(1)
+		
 	blankBackgroundSprite.fade_in()
 	
 	await get_tree().create_timer(1).timeout
 	
-	#Failure animation
-	#celebrationScene.activate()
+	
 	
 	#Forced pause to prevent accidental drawing
 	await get_tree().create_timer(0.1).timeout
