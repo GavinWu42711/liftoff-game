@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 CommunicationTrainingGlobals="*uid://cusxgsdnlsxy2"
+Global="*uid://ch4o1q67qis3g"
 
 [display]
 

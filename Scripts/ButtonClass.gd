@@ -3,6 +3,7 @@ class_name ButtonClass
 static var button_list:Array[Button]
 static var button_count:int = 0
 var button_num:int
+var clicked = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	button_num = button_count
@@ -14,5 +15,8 @@ func _process(delta: float) -> void:
 	pass
 	
 func _pressed() -> void:
-	button_list[button_num].visible = false
-	pass
+	self.visible = false
+	if self.button_num == clicked:
+		clicked+=1
+	else:
+		pass #place lose code here or something idk
