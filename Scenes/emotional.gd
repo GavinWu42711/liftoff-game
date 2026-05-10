@@ -28,7 +28,7 @@ func _ready() -> void:
 	og_sprite_list = [salad, battery, oj, marble, toast]
 	shuff_sprite_list = [salad, battery, oj, marble, toast]
 	#1 = good, 0 = bad
-	binary_list = [1, 0, 1, 0 , 1]
+	binary_list = [1, 0, 1, 0, 1]
 	shuff_sprite_list.shuffle()
 	run()
 
@@ -39,14 +39,15 @@ func run():
 		answered = false
 		print(answered)
 		await next
-		print("asdfasdfasdf")
 	wrong.play()
+	score = 0
 	await get_tree().create_timer(2.5).timeout
 	get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if score == max_score and not isFinished:
+		score = 0
 		isFinished = true
 		celebrationScene.activate()
 		await get_tree().create_timer(4).timeout
@@ -78,7 +79,7 @@ func _on_sadbutton_pressed() -> void:
 			if shuff_sprite_list[current] == og_sprite_list[i]:
 				if binary_list[i] == 0:
 					score += 1
-					wrong.play()
+					right.play()
 					break
 				else:
 					wrong.play()
