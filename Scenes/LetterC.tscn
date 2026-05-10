@@ -47,11 +47,7 @@ polygon = PackedVector2Array(4.4365425, 43.26366, -15.213985, 44.66727, 3.101047
 
 [node name="_CollisionPolygon2D_299898" type="CollisionPolygon2D" parent="collisions" unique_id=2024644361]
 position = Vector2(101.574524, -137.04726)
-polygon = PackedVector2Array(16.402843, -30.514643, 3.4254732, -39.95274, -7.079997, -46.256023, -10.31985, 39.600506, -2.5745268, 39.047268, 0.14605427, 38.075626)
-
-[node name="@CollisionPolygon2D@299899" type="CollisionPolygon2D" parent="collisions" unique_id=1069791189]
-position = Vector2(120.33959, -134.3067)
-polygon = PackedVector2Array(-2.3622189, -33.2552, 6.66041, -26.693295, 7.66041, -1.6932938, 6.66041, 26.306713, -18.619009, 35.33507)
+polygon = PackedVector2Array(16.402843, -30.514643, 3.4254732, -39.95274, -7.079997, -46.256023, -10.31985, 39.600506, -2.5745268, 39.047268, 0.14605427, 38.075626, 28.425476, 16.047256)
 
 [node name="@CollisionPolygon2D@300236" type="CollisionPolygon2D" parent="collisions" unique_id=1444528224]
 position = Vector2(-61.23191, 111.34377)
@@ -79,11 +75,7 @@ polygon = PackedVector2Array(20.502844, 53.978516, 12.451017, 60.805054, -21.180
 
 [node name="_CollisionPolygon2D_300575" type="CollisionPolygon2D" parent="collisions" unique_id=1673243091]
 position = Vector2(115.05564, 116.45518)
-polygon = PackedVector2Array(-6.5037794, -43.371906, -14.055644, -45.45518, -17.215778, -43.45931, 1.2537813, 56.760746, 10.944356, 48.54482, 25.57706, 26.980825)
-
-[node name="@CollisionPolygon2D@300576" type="CollisionPolygon2D" parent="collisions" unique_id=1073608685]
-position = Vector2(134.03691, 107.70386)
-polygon = PackedVector2Array(-25.48505, -34.620583, -4.036914, -28.703856, 11.963086, -1.703856, 10.963086, 29.296144, 6.595792, 35.732147)
+polygon = PackedVector2Array(-6.5037794, -43.371906, -14.055644, -45.45518, -17.215778, -43.45931, 1.2537813, 56.760746, 10.944356, 48.54482, 25.57706, 26.980825, 23.944359, -21.455177)
 
 [node name="_CollisionPolygon2D_300566" type="CollisionPolygon2D" parent="collisions" unique_id=633419403]
 position = Vector2(17.220043, 174.99207)

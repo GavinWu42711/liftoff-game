@@ -1,8 +1,62 @@
 [gd_scene format=3 uid="uid://c2drx7r4ex71u"]
 
 [ext_resource type="Script" uid="uid://vr17e8a40wvi" path="res://Scripts/communication_training.gd" id="1_8ajax"]
+[ext_resource type="PackedScene" uid="uid://co8lxlfe0qkmg" path="res://Scenes/celebrationScene.tscn" id="2_hx7ga"]
+[ext_resource type="Texture2D" uid="uid://dsn3io36rd3vx" path="res://Art/Letter Art v2/background.webp" id="3_sasl0"]
+[ext_resource type="Script" uid="uid://dbj360l37upnx" path="res://Scripts/blankBackground.gd" id="4_7eio5"]
+
+[sub_resource type="Animation" id="Animation_7eio5"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_2oerx"]
+resource_name = "fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_mdn4g"]
+resource_name = "fade_out"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1.035265, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kr71l"]
+_data = {
+&"RESET": SubResource("Animation_7eio5"),
+&"fade_in": SubResource("Animation_2oerx"),
+&"fade_out": SubResource("Animation_mdn4g")
+}
 
 [node name="CommunicationTraining" type="Node2D" unique_id=114571813]
 script = ExtResource("1_8ajax")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1819949467]
+
+[node name="CelebrationScene" parent="." unique_id=663618702 instance=ExtResource("2_hx7ga")]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1168032050]
+z_index = 1
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_sasl0")
+script = ExtResource("4_7eio5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D" unique_id=995317512]
+libraries/ = SubResource("AnimationLibrary_kr71l")
