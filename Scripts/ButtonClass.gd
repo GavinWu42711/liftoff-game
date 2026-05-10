@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 	pass
 	
 func _pressed() -> void:
-	self.visible = false
+	#self.visible = false
 	print(self.button_num)
 	if self.button_num == Global.clicked:
 		Global.clicked+=1

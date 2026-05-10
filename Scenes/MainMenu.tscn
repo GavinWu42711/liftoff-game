@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cafira5evt5l3"]
 
-[ext_resource type="Script" uid="uid://bbenq2j8aljgl" path="res://Scenes/main_menu.gd" id="1_853f1"]
+[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_853f1"]
 [ext_resource type="Texture2D" uid="uid://byi881wx7ldci" path="res://Art/Main Menu.webp" id="1_tt5f1"]
 
 [node name="MainMenu" type="Node2D" unique_id=2085189965]
