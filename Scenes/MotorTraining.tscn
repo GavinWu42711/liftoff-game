@@ -1,42 +1,69 @@
 [gd_scene format=3 uid="uid://b3n3u3akdvyc8"]
 
-[ext_resource type="Script" uid="uid://coqs3ab27vrj7" path="res://Scripts/motor_skills.gd" id="1_jibvq"]
+[ext_resource type="Script" uid="uid://dod8kfkdtl0nc" path="res://motor_training.gd" id="1_tjuiy"]
+[ext_resource type="Script" uid="uid://jc6m7w8jwfad" path="res://Scripts/ButtonClass.gd" id="2_kiev6"]
+[ext_resource type="Texture2D" uid="uid://b2u0mi0cotpt8" path="res://Art/Letter Art/A.webp" id="2_tjuiy"]
 
 [node name="MotorTraining" type="Node2D" unique_id=909498100]
-script = ExtResource("1_jibvq")
+script = ExtResource("1_tjuiy")
+metadata/_edit_horizontal_guides_ = [217.0]
 
 [node name="Button1" type="Button" parent="." unique_id=926703039]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("2_kiev6")
+
+[node name="Label" type="Label" parent="Button1" unique_id=520688701]
+z_index = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 174
+text = "1"
 
 [node name="Button2" type="Button" parent="." unique_id=1368337221]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("2_kiev6")
 
 [node name="Button3" type="Button" parent="." unique_id=714178957]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("2_kiev6")
 
 [node name="Button4" type="Button" parent="." unique_id=2049980009]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("2_kiev6")
 
 [node name="Button5" type="Button" parent="." unique_id=1954482212]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("2_kiev6")
 
 [node name="Button6" type="Button" parent="." unique_id=1964515022]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("2_kiev6")
 
 [node name="Button7" type="Button" parent="." unique_id=638446278]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("2_kiev6")
 
 [node name="Button8" type="Button" parent="." unique_id=607964669]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("2_kiev6")
 
 [node name="Button9" type="Button" parent="." unique_id=152396422]
 offset_right = 8.0
 offset_bottom = 8.0
+script = ExtResource("2_kiev6")
+
+[node name="A" type="Sprite2D" parent="." unique_id=1611687892]
+position = Vector2(526, 454)
+texture = ExtResource("2_tjuiy")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=267491935]
+position = Vector2(227, 241)
