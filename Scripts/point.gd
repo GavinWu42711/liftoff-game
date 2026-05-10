@@ -4,6 +4,7 @@ class_name Point
 
 var area2D:Area2D 
 var letterArea:Area2D
+@onready var line2D:Line2D = $Line2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -27,11 +28,11 @@ func _process(delta: float) -> void:
 		
 func turn_valid_colour() -> void:
 	#Valid sprite
-	pass
+	line2D.default_color = Color(255,255,255)
 	
 func turn_invalid_colour() -> void:
 	#Invalid sprite
-	pass
+	line2D.default_color = Color(255,0,0)
 
 func check_collisions() -> void:
 	if area2D.get_overlapping_areas():
