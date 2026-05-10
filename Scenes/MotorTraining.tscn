@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cmfabp4006a5q" path="res://Art/fucking planets yo/black_boy_8-removebg-preview.png" id="10_ig7gr"]
 [ext_resource type="Texture2D" uid="uid://bximaelmdslyq" path="res://Art/fucking planets yo/black_boy_9-removebg-preview.png" id="11_kq80v"]
 [ext_resource type="Texture2D" uid="uid://bt0c5a4tdf7j7" path="res://Art/defaultbg.png" id="12_d8xx0"]
-[ext_resource type="PackedScene" uid="uid://co8lxlfe0qkmg" path="res://Scenes/celebrationScene.tscn" id="13_decmf"]
+[ext_resource type="PackedScene" path="res://Scenes/celebrationScene.tscn" id="13_decmf"]
 [ext_resource type="AudioStream" uid="uid://cneps6r3j2vkn" path="res://Art/music/correct buzzer.mp3" id="14_4c62g"]
 [ext_resource type="AudioStream" uid="uid://c4s0vsfp8pevt" path="res://Art/music/If I Am With You.mp3" id="15_a3ks7"]
 [ext_resource type="AudioStream" uid="uid://ckyjgcnwnl8lh" path="res://Art/music/Wrong Buzzer - Sound Effect.mp3" id="16_0bag4"]
@@ -29,6 +29,7 @@ offset_top = -244.99994
 offset_right = 517.0
 offset_bottom = 44.00006
 scale = Vector2(0.3331459, 0.3594413)
+flat = true
 script = ExtResource("2_kiev6")
 
 [node name="Label" type="Label" parent="Button1" unique_id=520688701]
@@ -56,6 +57,7 @@ offset_top = 26.0
 offset_right = -374.99976
 offset_bottom = 162.0
 scale = Vector2(1.0475461, 1.0503273)
+flat = true
 script = ExtResource("2_kiev6")
 
 [node name="Sprite2" type="Sprite2D" parent="Button2" unique_id=2014101762]
@@ -84,6 +86,7 @@ offset_top = 208.13708
 offset_right = 583.0
 offset_bottom = 358.1371
 scale = Vector2(0.7765957, -0.7653175)
+flat = true
 script = ExtResource("2_kiev6")
 
 [node name="Sprite2D" type="Sprite2D" parent="Button3" unique_id=958152475]
@@ -112,6 +115,7 @@ offset_right = 60.15381
 offset_bottom = 290.5003
 scale = Vector2(0.8477557, -1.1608256)
 theme_override_font_sizes/font_size = 67
+flat = true
 script = ExtResource("2_kiev6")
 
 [node name="Sprite2D" type="Sprite2D" parent="Button4" unique_id=809385411]
@@ -139,6 +143,7 @@ offset_top = -303.0
 offset_right = -199.0
 offset_bottom = -95.0
 scale = Vector2(0.5339499, 0.5628609)
+flat = true
 script = ExtResource("2_kiev6")
 
 [node name="Sprite2D" type="Sprite2D" parent="Button5" unique_id=1744260502]
@@ -166,6 +171,7 @@ offset_top = -238.99998
 offset_right = 825.0
 offset_bottom = 135.00002
 scale = Vector2(0.29639995, 0.30474648)
+flat = true
 script = ExtResource("2_kiev6")
 
 [node name="Sprite2D" type="Sprite2D" parent="Button6" unique_id=1821199294]
@@ -192,6 +198,7 @@ offset_top = 221.99994
 offset_right = 382.0
 offset_bottom = 436.99994
 scale = Vector2(0.43791375, 0.47234318)
+flat = true
 script = ExtResource("2_kiev6")
 
 [node name="Sprite2D" type="Sprite2D" parent="Button7" unique_id=1290780696]
@@ -218,6 +225,7 @@ offset_top = 331.0
 offset_right = 73.999985
 offset_bottom = 612.0
 scale = Vector2(0.3781998, 0.35196462)
+flat = true
 script = ExtResource("2_kiev6")
 
 [node name="Sprite2D" type="Sprite2D" parent="Button8" unique_id=1052517517]
@@ -244,6 +252,7 @@ offset_top = -253.99994
 offset_right = 81.0
 offset_bottom = -39.99994
 scale = Vector2(0.45377138, 0.46237737)
+flat = true
 script = ExtResource("2_kiev6")
 
 [node name="Sprite2D" type="Sprite2D" parent="Button9" unique_id=78170408]

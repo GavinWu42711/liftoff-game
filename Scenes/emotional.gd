@@ -29,7 +29,7 @@ func _ready() -> void:
 	og_sprite_list = [salad, battery, oj, marble, toast]
 	shuff_sprite_list = [salad, battery, oj, marble, toast]
 	#1 = good, 0 = bad
-	binary_list = [1, 0, 1, 0 , 1]
+	binary_list = [1, 0, 1, 0, 1]
 	shuff_sprite_list.shuffle()
 	run()
 
