@@ -4,7 +4,7 @@ var isDrawing:bool = true
 var lastDrawingMousePos  = Vector2(10000,10000)
 var pointsOutOfBounds = 0
 const MIN_DRAWING_DIST = 0.5
-const RESTART_AMOUNT = 25
+const RESTART_AMOUNT = 5
 
 #Scene for the points that are drawn onto the screen
 var pointScene = preload("res://Scenes/Point.tscn")
@@ -41,12 +41,11 @@ preload("res://Scenes/LetterZ.tscn")
 #Enum to convert alphabet letter to index
 enum alphabetEnum {A,B,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}
 	
-
-
-
 var current_letter:Letter
 var current_letter_index:int
 
+@onready var celebrationScene = $CelebrationScene
+@onready var blankBackgroundSprite = $Sprite2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -105,9 +104,21 @@ func restart() -> void:
 	
 	#Reset out of bounds counter
 	pointsOutOfBounds = 0
+		
+	blankBackgroundSprite.fade_in()
+	
+	await get_tree().create_timer(1).timeout
+	
+	#Failure animation
+	#celebrationScene.activate()
 	
 	#Forced pause to prevent accidental drawing
+	await get_tree().create_timer(0.1).timeout
+	
+	blankBackgroundSprite.fade_out()
+	
 	await get_tree().create_timer(1).timeout
+	
 	
 	#Let the user start drawing again
 	isDrawing = true
@@ -115,7 +126,6 @@ func restart() -> void:
 func next_letter() -> void:
 	#Clear the "board", reset variables and get the next letter
 	CommunicationTrainingGlobals.clear_points.emit()
-	CommunicationTrainingGlobals.clear_letter.emit()
 	
 	#Lock the user out from drawing
 	isDrawing = false
@@ -132,12 +142,19 @@ func next_letter() -> void:
 	else:
 		current_letter_index = 0
 		
+	blankBackgroundSprite.fade_in()
+	
+	celebrationScene.activate()
+	
+	#Forced pause to prevent accidental drawing
+	await get_tree().create_timer(3.5).timeout
+	
+	CommunicationTrainingGlobals.clear_letter.emit()
 	#Instantiate the new letter
 	current_letter = letterScenes[current_letter_index].instantiate()
 	add_child(current_letter)
 	
-	#Forced pause to prevent accidental drawing
-	await get_tree().create_timer(1).timeout
+	blankBackgroundSprite.fade_out()
 	
 	#Let the user start drawing again
 	isDrawing = true
@@ -151,4 +168,5 @@ func increment_out_of_bound() -> void:
 func finish() -> void:
 	#Ends the activity and goes back to the main menu
 	pass
+
 	
