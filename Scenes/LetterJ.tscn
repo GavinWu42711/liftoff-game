@@ -11,7 +11,7 @@ letter = "J"
 
 [node name="@CollisionPolygon2D@27655" type="CollisionPolygon2D" parent="collisions" unique_id=1917294741]
 position = Vector2(-121.49998, 199.46434)
-polygon = PackedVector2Array(-27.067638, -5.255314, -21.500027, 3.535656, -1.5000181, 11.535656, 24.885983, 19.93118, 25.181698, -29.74718)
+polygon = PackedVector2Array(-27.067638, -5.255314, -21.500027, 3.535656, -1.5000181, 11.535656, 24.885983, 19.93118, 28.499977, -39.46434)
 
 [node name="_CollisionPolygon2D_27656" type="CollisionPolygon2D" parent="collisions" unique_id=416887890]
 position = Vector2(-120.002, 166.7846)
@@ -19,11 +19,7 @@ polygon = PackedVector2Array(15.038013, -29.742622, 23.817242, -19.50019, 23.683
 
 [node name="_CollisionPolygon2D_27657" type="CollisionPolygon2D" parent="collisions" unique_id=760622443]
 position = Vector2(-141.92654, 141.23404)
-polygon = PackedVector2Array(-32.66527, -18.148178, -31.07346, -9.234039, -20.07346, 31.76596, -12.048817, 44.43643, 36.962566, -4.192047, 30.926556, -11.234039, 27.971882, -33.394096)
-
-[node name="@CollisionPolygon2D@27658" type="CollisionPolygon2D" parent="collisions" unique_id=1315095025]
-position = Vector2(-147.09108, 96.487625)
-polygon = PackedVector2Array(-27.500738, 26.598236, -30.908926, 7.5123596, -25.908926, -15.48764, 21.09109, -18.48764, 30.09109, -11.48764, 33.136414, 11.352318)
+polygon = PackedVector2Array(-38.073456, -43.23404, -31.07346, -9.234039, -20.07346, 31.76596, -12.048817, 44.43643, 36.962566, -4.192047, 30.926556, -11.234039, 27.971882, -33.394096, 20.926544, -56.23404)
 
 [node name="_CollisionPolygon2D_27326" type="CollisionPolygon2D" parent="collisions" unique_id=577221994]
 position = Vector2(-81.69815, 188.50858)
@@ -115,15 +111,11 @@ polygon = PackedVector2Array(5.1700974, -32.221424, -3.3493118, -31.79546, -13.7
 
 [node name="_CollisionPolygon2D_28998" type="CollisionPolygon2D" parent="collisions" unique_id=483146273]
 position = Vector2(116.04087, -179.48038)
-polygon = PackedVector2Array(7.209375, 35.986866, -9.122931, 36.8353, -15.892889, -26.727016, -0.040869236, -27.519619, 17.847315, -18.575527)
-
-[node name="@CollisionPolygon2D@29000" type="CollisionPolygon2D" parent="collisions" unique_id=1668458083]
-position = Vector2(135.42769, -166.70988)
-polygon = PackedVector2Array(-12.177442, 23.21637, -2.4276857, 22.709885, 7.5723143, 11.709885, 8.572314, -26.290115, -1.5395021, -31.346024)
+polygon = PackedVector2Array(7.209375, 35.986866, -9.122931, 36.8353, -15.892889, -26.727016, -0.040869236, -27.519619, 17.847315, -18.575527, 31.95913, 18.480377)
 
 [node name="@CollisionPolygon2D@28994" type="CollisionPolygon2D" parent="collisions" unique_id=1514601721]
 position = Vector2(-88.3078, -170.28137)
-polygon = PackedVector2Array(3.6279602, -28.788612, -4.112442, -29.111137, -10.025909, 29.2351, 10.510376, 28.66465)
+polygon = PackedVector2Array(3.6279602, -28.788612, -4.112442, -29.111137, -27.6922, -10.718628, -10.025909, 29.2351, 10.510376, 28.66465)
 
 [node name="_CollisionPolygon2D_28995" type="CollisionPolygon2D" parent="collisions" unique_id=1595081098]
 position = Vector2(-73.82386, -176.27875)
@@ -140,10 +132,6 @@ polygon = PackedVector2Array(6.7760315, 28.630508, -7.628128, 29.030624, -13.158
 [node name="@CollisionPolygon2D@28999" type="CollisionPolygon2D" parent="collisions" unique_id=972280652]
 position = Vector2(-19.96833, -158.55016)
 polygon = PackedVector2Array(-13.242691, 15.6949005, -8.03167, 15.550156, 6.913307, 26.758896, 13.99688, 26.726852, 6.372772, -42.552994, -6.0085983, -42.17781)
-
-[node name="@CollisionPolygon2D@28992" type="CollisionPolygon2D" parent="collisions" unique_id=739729172]
-position = Vector2(-103.625656, -168.90646)
-polygon = PackedVector2Array(5.2919464, 27.860186, 3.6256561, 27.906466, -7.374344, 22.906466, -9.374344, -17.093534, -3.3743439, -31.093534, 11.205414, -30.486052)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=178890479]
 scale = Vector2(1.5, 1.5)

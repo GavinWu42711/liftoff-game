@@ -4,7 +4,7 @@ var isDrawing:bool = true
 var lastDrawingMousePos  = Vector2(10000,10000)
 var pointsOutOfBounds = 0
 const MIN_DRAWING_DIST = 0.5
-const RESTART_AMOUNT = 25
+const RESTART_AMOUNT = 5
 
 #Scene for the points that are drawn onto the screen
 var pointScene = preload("res://Scenes/Point.tscn")

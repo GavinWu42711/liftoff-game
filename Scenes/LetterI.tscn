@@ -31,19 +31,11 @@ polygon = PackedVector2Array(3.8783045, -23.84603, -0.2740202, -23.999823, -8.21
 
 [node name="_CollisionPolygon2D_22692" type="CollisionPolygon2D" parent="collisions" unique_id=811995083]
 position = Vector2(68.087234, 153.85286)
-polygon = PackedVector2Array(4.7593317, 22.806751, -3.0651922, 23.992283, -8.934901, -23.699062, 7.2407618, -23.099972)
-
-[node name="@CollisionPolygon2D@22693" type="CollisionPolygon2D" parent="collisions" unique_id=960851976]
-position = Vector2(84.63491, 150.88249)
-polygon = PackedVector2Array(-11.788347, 25.77711, 12.3650875, 22.117502, 11.3650875, -7.8824983, -2.634912, -19.882498, -9.306917, -20.129614)
+polygon = PackedVector2Array(4.7593317, 22.806751, -3.0651922, 23.992283, -8.934901, -23.699062, 7.2407618, -23.099972, 22.912766, -14.8528595, 30.912766, 3.1471405)
 
 [node name="_CollisionPolygon2D_22685" type="CollisionPolygon2D" parent="collisions" unique_id=126582022]
 position = Vector2(-47.356033, 146.0099)
-polygon = PackedVector2Array(-20.282087, -16.494768, 9.766237, -25.616571, 11.50635, -25.584047, 7.7522297, 34.482117, -8.742727, 33.213272)
-
-[node name="@CollisionPolygon2D@22688" type="CollisionPolygon2D" parent="collisions" unique_id=401342218]
-position = Vector2(-74.43422, 155.43457)
-polygon = PackedVector2Array(6.7960987, -25.919441, -14.565779, -19.434578, -10.565779, 21.565422, 18.335459, 23.788597)
+polygon = PackedVector2Array(-20.282087, -16.494768, 9.766237, -25.616571, 11.50635, -25.584047, 7.7522297, 34.482117, -8.742727, 33.213272, -33.643967, 36.990097, -42.643967, 12.990097, -43.643967, -10.009903)
 
 [node name="@CollisionPolygon2D@23663" type="CollisionPolygon2D" parent="collisions" unique_id=790934086]
 position = Vector2(46.69313, -167.05446)
@@ -51,11 +43,7 @@ polygon = PackedVector2Array(10.779596, -40.49602, 0.06864357, -40.00356, -11.95
 
 [node name="_CollisionPolygon2D_23664" type="CollisionPolygon2D" parent="collisions" unique_id=507578925]
 position = Vector2(67.18777, -183.66396)
-polygon = PackedVector2Array(4.7259235, 23.15364, -3.9945736, 25.47911, -9.71504, -23.88652, 8.98369, -24.746231)
-
-[node name="@CollisionPolygon2D@23666" type="CollisionPolygon2D" parent="collisions" unique_id=1079312387]
-position = Vector2(85.680855, -184.82008)
-polygon = PackedVector2Array(-13.767168, 24.309769, -0.6808572, 20.820084, 8.319143, 13.820084, 12.319143, -11.179916, 3.3191428, -24.179916, -9.509401, -23.590103)
+polygon = PackedVector2Array(4.7259235, 23.15364, -3.9945736, 25.47911, -9.71504, -23.88652, 8.98369, -24.746231, 32.812233, -0.3360443)
 
 [node name="_CollisionPolygon2D_23656" type="CollisionPolygon2D" parent="collisions" unique_id=1832220393]
 position = Vector2(33.353916, -172.75507)
@@ -83,11 +71,7 @@ polygon = PackedVector2Array(-15.154676, 10.103136, -2.6658916, 12.351122, 4.547
 
 [node name="_CollisionPolygon2D_23662" type="CollisionPolygon2D" parent="collisions" unique_id=1050018082]
 position = Vector2(-59.50419, -185.64937)
-polygon = PackedVector2Array(-16.946152, -16.726665, -4.4958067, -18.350628, 20.090763, -18.723156, 9.0154085, 28.401386, -7.664214, 25.399067)
-
-[node name="@CollisionPolygon2D@23665" type="CollisionPolygon2D" parent="collisions" unique_id=812452256]
-position = Vector2(-82.92375, -181.92526)
-polygon = PackedVector2Array(6.4734087, -20.45077, -4.076251, -19.074732, -13.076251, -0.07473135, -5.076251, 17.925268, 15.755345, 21.674963)
+polygon = PackedVector2Array(-16.946152, -16.726665, -4.4958067, -18.350628, 20.090763, -18.723156, 9.0154085, 28.401386, -7.664214, 25.399067, -33.49581, 4.6493683)
 
 [node name="@CollisionPolygon2D@23995" type="CollisionPolygon2D" parent="collisions" unique_id=674223194]
 position = Vector2(-6.290817, 112.939575)
@@ -142,5 +126,6 @@ position = Vector2(-1.3830767, -130.58426)
 polygon = PackedVector2Array(-23.951132, 7.254636, -22.616924, 1.5842562, -29.403759, -11.01987, 39.375225, -8.113711, 36.596596, 10.29469)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2042691495]
+position = Vector2(6, 7)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_blwen")
