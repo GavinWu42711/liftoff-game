@@ -23,6 +23,9 @@ signal move
 var marker_list:Array[Marker2D]
 var button_list:Array[Button]
 
+@onready var celebrationScene = $CelebrationScene
+var isFinished:bool = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	call_deferred("run")
@@ -48,9 +51,14 @@ func _process(delta: float) -> void:
 	if Global.stage < 10:
 		for i in range(Global.stage):
 			Global.button_list[i].visible = true
-	else:
+	elif !isFinished:
+		isFinished = true
 		#enter next scene here
-		pass
+		celebrationScene.activate()
+		
+		await get_tree().create_timer(4).timeout
+		
+		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
 
 #toggle visiblity function
 func toggle_visiblity(index:int) -> void:

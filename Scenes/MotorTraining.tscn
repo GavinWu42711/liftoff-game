@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cmfabp4006a5q" path="res://Art/fucking planets yo/black_boy_8-removebg-preview.png" id="10_ig7gr"]
 [ext_resource type="Texture2D" uid="uid://bximaelmdslyq" path="res://Art/fucking planets yo/black_boy_9-removebg-preview.png" id="11_kq80v"]
 [ext_resource type="Texture2D" uid="uid://bt0c5a4tdf7j7" path="res://Art/defaultbg.png" id="12_d8xx0"]
+[ext_resource type="PackedScene" path="res://Scenes/celebrationScene.tscn" id="13_decmf"]
 
 [node name="MotorTraining" type="Node2D" unique_id=909498100]
 script = ExtResource("1_tjuiy")
@@ -295,3 +296,5 @@ metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1913311651]
 position = Vector2(27, 73)
+
+[node name="CelebrationScene" parent="." unique_id=663618702 instance=ExtResource("13_decmf")]
