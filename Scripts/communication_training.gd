@@ -9,6 +9,8 @@ const RESTART_AMOUNT = 5
 #Scene for the points that are drawn onto the screen
 var pointScene = preload("res://Scenes/Point.tscn")
 
+var finished:bool = false
+
 @onready var wrongAnswerSound:AudioStreamPlayer2D = $AudioStreamPlayer2D2
 
 #Array containing all letter scenes
@@ -128,8 +130,6 @@ func restart() -> void:
 	isDrawing = true
 	
 func next_letter() -> void:
-	#Clear the "board", reset variables and get the next letter
-	CommunicationTrainingGlobals.clear_points.emit()
 	
 	#Lock the user out from drawing
 	isDrawing = false
@@ -146,6 +146,9 @@ func next_letter() -> void:
 		
 		blankBackgroundSprite.fade_in()
 	
+		#Clear the "board", reset variables and get the next letter
+		CommunicationTrainingGlobals.clear_points.emit()
+	
 		celebrationScene.activate()
 		
 		#Forced pause to prevent accidental drawing
@@ -160,8 +163,8 @@ func next_letter() -> void:
 		
 		#Let the user start drawing again
 		isDrawing = true
-	else:
-		current_letter_index = 0
+	elif not finished:
+		finished = true
 		
 		blankBackgroundSprite.fade_in()
 	

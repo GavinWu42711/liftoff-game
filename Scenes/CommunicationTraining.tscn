@@ -66,9 +66,10 @@ libraries/ = SubResource("AnimationLibrary_kr71l")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1941560784]
 stream = ExtResource("5_2oerx")
-volume_db = -10.0
+volume_db = 10.0
 autoplay = true
 script = ExtResource("6_mdn4g")
 
 [node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." unique_id=1243135260]
 stream = ExtResource("7_kr71l")
+volume_db = 10.0

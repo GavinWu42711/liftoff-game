@@ -15,9 +15,10 @@ var binary_list:Array[int]
 @onready var oj: Sprite2D = $oj
 
 var isFinished:bool = false
+var checkFinished:bool = false
 
 var current = 0
-static var score = 0
+var score = 0
 var max_score = 5
 var answered = false
 signal next
@@ -40,17 +41,22 @@ func run():
 		print(answered)
 		await next
 		print("asdfasdfasdf")
-	wrong.play()
-	await get_tree().create_timer(2.5).timeout
-	get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
-
+	
+	checkFinished = true
+		
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if score == max_score and not isFinished:
-		isFinished = true
-		celebrationScene.activate()
-		await get_tree().create_timer(4).timeout
-		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
+	if (checkFinished):
+		if score == max_score and not isFinished:
+			isFinished = true
+			celebrationScene.activate()
+			await get_tree().create_timer(4).timeout
+			get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
+		elif not isFinished:
+			isFinished = true
+			wrong.play()
+			await get_tree().create_timer(2.5).timeout
+			get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
 
 
 func _on_happybutton_pressed() -> void:
@@ -63,7 +69,7 @@ func _on_happybutton_pressed() -> void:
 					right.play()
 					break
 				else:
-					wrong.play()
+					wrong.play(2)
 					break
 		shuff_sprite_list[current].visible = false
 		print("emitting")
@@ -78,10 +84,10 @@ func _on_sadbutton_pressed() -> void:
 			if shuff_sprite_list[current] == og_sprite_list[i]:
 				if binary_list[i] == 0:
 					score += 1
-					wrong.play()
+					right.play()
 					break
 				else:
-					wrong.play()
+					wrong.play(2)
 					break
 		shuff_sprite_list[current].visible = false
 		print("emitting")

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://co8lxlfe0qkmg"]
 
-[ext_resource type="Script" uid="uid://vdq3rcv3qljw" path="res://Scripts/celebration_scene.gd" id="1_uh2j1"]
+[ext_resource type="Script" path="res://Scripts/celebration_scene.gd" id="1_uh2j1"]
 [ext_resource type="PackedScene" uid="uid://2olyc2tj1wp" path="res://Scenes/ConfettiPopper.tscn" id="1_xsjgk"]
 [ext_resource type="AudioStream" uid="uid://uju55j64reit" path="res://Art/Confetti Sound.mp3" id="3_0olxf"]
 
@@ -31,4 +31,4 @@ rotation = 0.7853982
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2083099831]
 stream = ExtResource("3_0olxf")
-volume_db = 0.82
+volume_db = 20.0

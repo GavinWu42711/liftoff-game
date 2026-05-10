@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://o64yx3fqf0gj"]
+[gd_scene format=3 uid="uid://cbca00oaycwq7"]
 
 [ext_resource type="Texture2D" uid="uid://bt0c5a4tdf7j7" path="res://Art/defaultbg.png" id="1_lkce3"]
 [ext_resource type="Script" uid="uid://cwbc112s23633" path="res://Scenes/emotional.gd" id="1_qyebv"]
@@ -9,7 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://cneps6r3j2vkn" path="res://Art/music/correct buzzer.mp3" id="7_a2w86"]
 [ext_resource type="AudioStream" uid="uid://c4s0vsfp8pevt" path="res://Art/music/If I Am With You.mp3" id="8_d1bae"]
 [ext_resource type="AudioStream" uid="uid://ckyjgcnwnl8lh" path="res://Art/music/Wrong Buzzer - Sound Effect.mp3" id="8_sba3v"]
-[ext_resource type="PackedScene" path="res://Scenes/celebrationScene.tscn" id="10_d1bae"]
+[ext_resource type="PackedScene" uid="uid://co8lxlfe0qkmg" path="res://Scenes/celebrationScene.tscn" id="10_d1bae"]
 [ext_resource type="Texture2D" uid="uid://bsoikj2lmdd6m" path="res://Art/Letter Art v2/oj.png" id="11_pfj3s"]
 [ext_resource type="Texture2D" uid="uid://b2oxdhumup7pp" path="res://Art/Letter Art v2/toast.png" id="12_ak02r"]
 [ext_resource type="Texture2D" uid="uid://8gkjx7lbpurj" path="res://Art/Letter Art v2/marble.png" id="13_u5b7k"]
@@ -64,13 +64,16 @@ texture = ExtResource("6_kiejh")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=276597201]
 stream = ExtResource("7_a2w86")
+volume_db = 5.0
 
 [node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="." unique_id=1740130189]
 stream = ExtResource("8_d1bae")
+volume_db = 10.0
 autoplay = true
 
 [node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." unique_id=790346984]
 stream = ExtResource("8_sba3v")
+volume_db = 13.0
 
 [node name="oj" type="Sprite2D" parent="." unique_id=1098988147]
 visible = false

@@ -5,7 +5,7 @@ extends AudioStreamPlayer2D
 func _ready() -> void:
 	pass # Replace with function body.
 	await get_tree().create_timer(1).timeout
-	volume_db = 10
+	volume_db = 30
 	play()
 
 
