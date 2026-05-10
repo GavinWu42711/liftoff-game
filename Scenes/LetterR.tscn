@@ -2,27 +2,10 @@
 
 [ext_resource type="Script" uid="uid://caaa37lf7bgee" path="res://Scripts/LettersClass.gd" id="1_a613x"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_cn8er"]
-
-[node name="Letter" type="Node2D" unique_id=2097060901 node_paths=PackedStringArray("letterSections")]
+[node name="Letter" type="Node2D" unique_id=2097060901]
 script = ExtResource("1_a613x")
-letterSections = [NodePath(""), NodePath(""), NodePath("")]
 letter = "R"
 
-[node name="Area2D" type="Area2D" parent="." unique_id=540665168]
+[node name="collisions" type="Node2D" parent="." unique_id=1754755199]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=677983314]
-shape = SubResource("RectangleShape2D_cn8er")
-
-[node name="Area2D2" type="Area2D" parent="." unique_id=1336215257]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=1970898693]
-position = Vector2(0, 20)
-shape = SubResource("RectangleShape2D_cn8er")
-
-[node name="Area2D3" type="Area2D" parent="." unique_id=228713084]
-position = Vector2(0, -40)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" unique_id=692440090]
-position = Vector2(0, 20)
-shape = SubResource("RectangleShape2D_cn8er")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1847751296]
