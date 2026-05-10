@@ -9,9 +9,13 @@ letter = "D"
 
 [node name="collisions" type="Node2D" parent="." unique_id=234849010]
 
+[node name="_CollisionPolygon2D_346497" type="CollisionPolygon2D" parent="collisions" unique_id=1699361395]
+position = Vector2(-106.06911, 214.1088)
+polygon = PackedVector2Array(-45.40771, -20.14492, -36.93089, -0.108795166, -5.93089, 12.891205, 43.851658, 17.869446, 44.417835, -10.506989)
+
 [node name="_CollisionPolygon2D_348143" type="CollisionPolygon2D" parent="collisions" unique_id=1141153486]
 position = Vector2(-116.29692, 187.38266)
-polygon = PackedVector2Array(54.966793, 0.122909546, 54.64564, 16.219131, 49.29692, 44.61734, -15.703079, 38.61734, -35.179905, 6.5812073, -37.703083, 0.6173401, -36.72945, -23.540604)
+polygon = PackedVector2Array(54.966793, 0.122909546, 54.64564, 16.219131, -35.179905, 6.5812073, -37.703083, 0.6173401, -36.72945, -23.540604)
 
 [node name="_CollisionPolygon2D_348144" type="CollisionPolygon2D" parent="collisions" unique_id=10118801]
 position = Vector2(-106.81907, 162.23758)
@@ -67,7 +71,11 @@ polygon = PackedVector2Array(-42.650177, -4.194618, -43.26831, 11.142876, 42.689
 
 [node name="_CollisionPolygon2D_348157" type="CollisionPolygon2D" parent="collisions" unique_id=59683486]
 position = Vector2(-96.60648, -179.62776)
-polygon = PackedVector2Array(36.606483, -37.37224, 42.41996, 9.096394, -43.458733, 21.871723, -41.791603, -19.49458)
+polygon = PackedVector2Array(42.83037, -11.473537, 42.41996, 9.096394, -43.458733, 21.871723, -41.791603, -19.49458)
+
+[node name="@CollisionPolygon2D@348158" type="CollisionPolygon2D" parent="collisions" unique_id=1347059371]
+position = Vector2(-95.79355, -207.30592)
+polygon = PackedVector2Array(42.01744, 16.204624, 42.79355, -22.694103, -42.20645, -1.6941032, -42.604538, 8.183582)
 
 [node name="@CollisionPolygon2D@348488" type="CollisionPolygon2D" parent="collisions" unique_id=1364093685]
 position = Vector2(89.32294, -128.96027)
