@@ -19,4 +19,4 @@ func _pressed() -> void:
 	if self.button_num == clicked:
 		clicked+=1
 	else:
-		pass #place lose code here or something idk
+		print("youre a chud")

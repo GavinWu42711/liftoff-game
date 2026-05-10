@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cneps6r3j2vkn"
+path="res://.godot/imported/correct buzzer.mp3-f581bcf31d06f02e0939e83510257b6f.mp3str"
+
+[deps]
+
+source_file="res://Art/music/correct buzzer.mp3"
+dest_files=["res://.godot/imported/correct buzzer.mp3-f581bcf31d06f02e0939e83510257b6f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
