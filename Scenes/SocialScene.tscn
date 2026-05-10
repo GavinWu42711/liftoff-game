@@ -1,3 +1,10 @@
 [gd_scene format=3 uid="uid://cq6m2q3x1yn8q"]
 
+[ext_resource type="AudioStream" uid="uid://c4s0vsfp8pevt" path="res://Art/music/If I Am With You.mp3" id="1_mvqff"]
+
 [node name="SocialScene" type="Node2D" unique_id=861917737]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=608125824]
+stream = ExtResource("1_mvqff")
+volume_db = -10.0
+autoplay = true

@@ -139,27 +139,43 @@ func next_letter() -> void:
 	#Go to the next letter in the alphabet
 	if current_letter_index < 25:
 		current_letter_index+= 1
+		
+		blankBackgroundSprite.fade_in()
+	
+		celebrationScene.activate()
+		
+		#Forced pause to prevent accidental drawing
+		await get_tree().create_timer(3.5).timeout
+		
+		CommunicationTrainingGlobals.clear_letter.emit()
+		#Instantiate the new letter
+		current_letter = letterScenes[current_letter_index].instantiate()
+		add_child(current_letter)
+		
+		blankBackgroundSprite.fade_out()
+		
+		#Let the user start drawing again
+		isDrawing = true
 	else:
 		current_letter_index = 0
 		
-	blankBackgroundSprite.fade_in()
+		blankBackgroundSprite.fade_in()
 	
-	celebrationScene.activate()
+		celebrationScene.activate()
+		
+		#Forced pause to prevent accidental drawing
+		await get_tree().create_timer(3.5).timeout
+		
+		CommunicationTrainingGlobals.clear_letter.emit()
+		
+		#Let the user start drawing again
+		isDrawing = true
+		
+		#Switch scene
+		get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
+		
+		
 	
-	#Forced pause to prevent accidental drawing
-	await get_tree().create_timer(3.5).timeout
-	
-	CommunicationTrainingGlobals.clear_letter.emit()
-	#Instantiate the new letter
-	current_letter = letterScenes[current_letter_index].instantiate()
-	add_child(current_letter)
-	
-	blankBackgroundSprite.fade_out()
-	
-	#Let the user start drawing again
-	isDrawing = true
-	
-	pass
 	
 func increment_out_of_bound() -> void:
 	#Increment the counter counting how many points are out of bounds

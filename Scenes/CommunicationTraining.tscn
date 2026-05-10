@@ -3,7 +3,8 @@
 [ext_resource type="Script" uid="uid://vr17e8a40wvi" path="res://Scripts/communication_training.gd" id="1_8ajax"]
 [ext_resource type="PackedScene" uid="uid://co8lxlfe0qkmg" path="res://Scenes/celebrationScene.tscn" id="2_hx7ga"]
 [ext_resource type="Texture2D" uid="uid://dsn3io36rd3vx" path="res://Art/Letter Art v2/background.webp" id="3_sasl0"]
-[ext_resource type="Script" uid="uid://dbj360l37upnx" path="res://Scripts/blankBackground.gd" id="4_7eio5"]
+[ext_resource type="Script" path="res://Scripts/blankBackground.gd" id="4_7eio5"]
+[ext_resource type="AudioStream" uid="uid://c4s0vsfp8pevt" path="res://Art/music/If I Am With You.mp3" id="5_2oerx"]
 
 [sub_resource type="Animation" id="Animation_7eio5"]
 length = 0.001
@@ -60,3 +61,8 @@ script = ExtResource("4_7eio5")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D" unique_id=995317512]
 libraries/ = SubResource("AnimationLibrary_kr71l")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1941560784]
+stream = ExtResource("5_2oerx")
+volume_db = -10.0
+autoplay = true
