@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cafira5evt5l3"]
+
+[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_853f1"]
+[ext_resource type="Texture2D" path="res://Art/Main Menu.webp" id="1_tt5f1"]
+
+[node name="MainMenu" type="Node2D" unique_id=2085189965]
+script = ExtResource("1_853f1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1075762298]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_tt5f1")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=938561028]
+
+[node name="Motor" type="Button" parent="." unique_id=601464061]
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+offset_left = -127.0
+offset_top = -226.0
+offset_right = 132.0
+offset_bottom = 169.0
+
+[node name="Communication" type="Button" parent="." unique_id=578866376]
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+offset_left = -397.0
+offset_top = -206.0
+offset_right = -172.0
+offset_bottom = 161.0
+
+[node name="Social" type="Button" parent="." unique_id=60496690]
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+offset_left = 172.0
+offset_top = -212.0
+offset_right = 396.0
+offset_bottom = 171.0
