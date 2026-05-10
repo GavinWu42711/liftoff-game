@@ -1,20 +1,24 @@
 [gd_scene format=3 uid="uid://dovxkfgbeplf6"]
 
 [ext_resource type="Script" uid="uid://c73nhnwllck24" path="res://Scripts/point.gd" id="1_r0j30"]
-[ext_resource type="Texture2D" uid="uid://ba4esyiee6ot8" path="res://icon.svg" id="2_femo3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pylha"]
-radius = 6.3245554
+radius = 25.079872
 
 [node name="Point" type="Node2D" unique_id=1728737883]
 script = ExtResource("1_r0j30")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1992439327]
-scale = Vector2(0.4, 0.4)
-texture = ExtResource("2_femo3")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=913472175]
 collision_mask = 128
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1337043442]
 shape = SubResource("CircleShape2D_pylha")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=2037492176]
+position = Vector2(0, -1)
+points = PackedVector2Array(0, 1, 0, 0)
+width = 50.0
+default_color = Color(1, 1, 1, 0)
+joint_mode = 2
+begin_cap_mode = 2
+end_cap_mode = 2

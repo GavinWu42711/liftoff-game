@@ -84,7 +84,7 @@ func draw_point(mousePos:Vector2) -> void:
 	add_child(point)
 	
 	#Add delay before checking collision; wait 1 physics frame
-	await get_tree().create_timer(0.1).timeout
+	await get_tree().create_timer(0.07).timeout
 	
 	#Race condition 
 	if (point):
